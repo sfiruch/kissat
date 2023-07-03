@@ -5,23 +5,22 @@
 
 typedef struct flags flags;
 
-struct flags
-{
-	unsigned active:1;
-	unsigned backbone0:1;
-	unsigned backbone1:1;
-	unsigned eliminate:1;
-	unsigned eliminated:1;
-	unsigned fixed:1;
-	unsigned subsume:1;
-	unsigned sweep:1;
+struct flags {
+  unsigned active : 1;
+  unsigned backbone0 : 1;
+  unsigned backbone1 : 1;
+  unsigned eliminate : 1;
+  unsigned eliminated : 1;
+  unsigned fixed : 1;
+  unsigned subsume : 1;
+  unsigned sweep : 1;
+  unsigned transitive : 1;
 };
 
-#define FLAGS(IDX) \
-  (assert ((IDX) < VARS), (solver->flags + (IDX)))
+#define FLAGS(IDX) (assert ((IDX) < VARS), (solver->flags + (IDX)))
 
-#define ACTIVE(IDX) (FLAGS(IDX)->active)
-#define ELIMINATED(IDX) (FLAGS(IDX)->eliminated)
+#define ACTIVE(IDX) (FLAGS (IDX)->active)
+#define ELIMINATED(IDX) (FLAGS (IDX)->eliminated)
 
 struct kissat;
 
