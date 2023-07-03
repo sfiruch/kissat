@@ -273,6 +273,9 @@
     <ClCompile Include="src\warmup.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\transitive.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pal-win\sys\time.h">
@@ -591,6 +594,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\warmup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\keatures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\transitive.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

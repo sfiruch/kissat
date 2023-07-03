@@ -365,6 +365,7 @@
     <ClCompile Include="src\sweep.c" />
     <ClCompile Include="src\terminate.c" />
     <ClCompile Include="src\trail.c" />
+    <ClCompile Include="src\transitive.c" />
     <ClCompile Include="src\utilities.c" />
     <ClCompile Include="src\vector.c" />
     <ClCompile Include="src\vivify.c" />
@@ -423,6 +424,7 @@
     <ClInclude Include="src\inlinequeue.h" />
     <ClInclude Include="src\inlinevector.h" />
     <ClInclude Include="src\internal.h" />
+    <ClInclude Include="src\keatures.h" />
     <ClInclude Include="src\kimits.h" />
     <ClInclude Include="src\kissat.h" />
     <ClInclude Include="src\kitten.h" />
@@ -472,6 +474,7 @@
     <ClInclude Include="src\sweep.h" />
     <ClInclude Include="src\terminate.h" />
     <ClInclude Include="src\trail.h" />
+    <ClInclude Include="src\transitive.h" />
     <ClInclude Include="src\utilities.h" />
     <ClInclude Include="src\value.h" />
     <ClInclude Include="src\vector.h" />
