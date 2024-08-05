@@ -8,6 +8,8 @@
 
 #include <stdbool.h>
 
+#pragma pack(push, 1)
+
 typedef union watch watch;
 
 typedef struct binary_tagged_literal watch_type;
@@ -17,30 +19,30 @@ typedef struct binary_tagged_reference large_watch;
 
 struct binary_tagged_literal {
 #ifdef KISSAT_IS_BIG_ENDIAN
-  bool binary : 1;
-  unsigned lit : 31;
+    unsigned binary : 1;
+    unsigned lit : 31;
 #else
-  unsigned lit : 31;
-  bool binary : 1;
+    unsigned lit : 31;
+    unsigned binary : 1;
 #endif
 };
 
 struct binary_tagged_reference {
 #ifdef KISSAT_IS_BIG_ENDIAN
-  bool binary : 1;
-  unsigned ref : 31;
+    unsigned binary : 1;
+    unsigned ref : 31;
 #else
-  unsigned ref : 31;
-  bool binary : 1;
+    unsigned ref : 31;
+    unsigned binary : 1;
 #endif
 };
 
 union watch {
-  watch_type type;
-  binary_watch binary;
-  blocking_watch blocking;
-  large_watch large;
-  unsigned raw;
+    watch_type type;
+    binary_watch binary;
+    blocking_watch blocking;
+    large_watch large;
+    unsigned raw;
 };
 
 typedef vector watches;
@@ -172,5 +174,7 @@ void kissat_watch_large_clauses (struct kissat *);
 void kissat_flush_large_connected (struct kissat *);
 
 void kissat_connect_irredundant_large_clauses (struct kissat *);
+
+#pragma pack(pop)
 
 #endif

@@ -6,6 +6,8 @@
 
 #include <limits.h>
 
+#include <unistd.h>
+
 #ifdef COMPACT
 #define LD_MAX_VECTORS (sizeof (word) == 8 ? 32u : 28u)
 #else

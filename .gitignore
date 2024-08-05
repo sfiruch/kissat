@@ -10,3 +10,7 @@ tissat
 *.gcov
 gmon.out
 *~
+/Debug
+/x64
+/kissat.vcxproj.user
+/.vs

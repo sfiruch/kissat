@@ -8,7 +8,7 @@
 #include <ctype.h>
 #include <inttypes.h>
 
-#define size_buffer (1u << 20)
+#define size_buffer (1u << 16)
 
 struct read_buffer {
   unsigned char chars[size_buffer];

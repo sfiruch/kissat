@@ -9,6 +9,8 @@
 #include <sys/types.h>
 #include <unistd.h>
 
+#define stat _stat64
+
 bool kissat_file_exists (const char *path) {
   if (!path)
     return false;
