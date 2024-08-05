@@ -1,3 +1,4 @@
+#include <unistd.h>
 #include "application.h"
 #include "cover.h"
 #include "handle.h"
@@ -42,6 +43,7 @@ extern int kissat_dump (kissat *);
 #include <strings.h>
 
 int main (int argc, char **argv) {
+  pal_init();
   int res;
   solver = kissat_init ();
   kissat_init_alarm (kissat_alarm_handler);

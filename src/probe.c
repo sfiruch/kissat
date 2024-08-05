@@ -2,6 +2,7 @@
 #include "backbone.h"
 #include "backtrack.h"
 #include "congruence.h"
+#include "classify.h"
 #include "factor.h"
 #include "internal.h"
 #include "print.h"

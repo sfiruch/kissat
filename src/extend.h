@@ -8,7 +8,7 @@ typedef struct extension extension;
 
 struct extension {
   signed int lit : 31;
-  bool blocking : 1;
+  int blocking : 1;
 };
 
 // clang-format off

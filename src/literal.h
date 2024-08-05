@@ -1,7 +1,7 @@
 #ifndef _literal_h_INCLUDED
 #define _literal_h_INCLUDED
 
-#include <limits.h>
+#include <unistd.h>
 
 #define LD_MAX_VAR 30u
 #define LD_MAX_LIT (1 + LD_MAX_VAR)

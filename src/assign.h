@@ -16,11 +16,11 @@ struct assigned {
   unsigned level;
   unsigned trail;
 
-  bool analyzed : 1;
-  bool binary : 1;
-  bool poisoned : 1;
-  bool removable : 1;
-  bool shrinkable : 1;
+  unsigned analyzed : 1;
+  unsigned binary : 1;
+  unsigned poisoned : 1;
+  unsigned removable : 1;
+  unsigned shrinkable : 1;
 
   unsigned reason;
 };
