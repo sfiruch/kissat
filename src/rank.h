@@ -33,7 +33,7 @@
     const size_t WIDTH_RADIX = (1 << LENGTH_RADIX); \
     const RTYPE MASK_RADIX = WIDTH_RADIX - 1; \
 \
-    size_t* COUNT_RADIX = _alloca(sizeof(size_t)*WIDTH_RADIX); \
+    size_t *COUNT_RADIX = kissat_malloc (solver, sizeof (size_t) * WIDTH_RADIX); \
 \
     VTYPE *TMP_RADIX = 0; \
     const size_t BYTES_TMP_RADIX = N_RADIX * sizeof (VTYPE); \
@@ -125,6 +125,8 @@
 \
     if (TMP_RADIX) \
       kissat_free (solver, TMP_RADIX, BYTES_TMP_RADIX); \
+\
+    kissat_free (solver, COUNT_RADIX, sizeof (size_t) * WIDTH_RADIX); \
 \
     CHECK_RANKED (N_RADIX, V_RADIX, RANK); \
     STOP (radix); \
