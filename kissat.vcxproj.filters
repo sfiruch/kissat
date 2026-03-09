@@ -210,9 +210,6 @@
     <ClCompile Include="src\sort.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\stack.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\statistics.c">
       <Filter>Source Files</Filter>
     </ClCompile>

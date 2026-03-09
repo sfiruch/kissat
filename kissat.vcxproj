@@ -366,7 +366,6 @@
     <ClCompile Include="src\shrink.c" />
     <ClCompile Include="src\smooth.c" />
     <ClCompile Include="src\sort.c" />
-    <ClCompile Include="src\stack.c" />
     <ClCompile Include="src\statistics.c" />
     <ClCompile Include="src\strengthen.c" />
     <ClCompile Include="src\substitute.c" />
